@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .art {
+            width: 200px;
+            height: 200px;
+            background-color: #ff6347;
+            position: relative;
+            border-radius: 50%;
+        }
+        .art::before {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+    </style>
+    <title>CSS Art</title>
+</head>
+<body>
+    <div class="art"></div>
+</body>
+</html>
